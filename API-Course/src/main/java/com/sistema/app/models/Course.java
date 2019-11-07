@@ -33,9 +33,7 @@ public class Course {
 	private String teacher;
 	@NotEmpty
 	private String codInstitute;
-	@NotEmpty
 	private List<Student> students;
-	@NotEmpty
 	private List<Family> listeners;
 	
 }
