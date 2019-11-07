@@ -1,4 +1,6 @@
-package com.sistema.app.models.documents;
+package com.sistema.app.models;
+
+import java.util.List;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -28,10 +30,12 @@ public class Course {
 	@NotNull
 	private Integer minCapacityCourse;
 	@NotEmpty
-	private String idTeacher;
+	private String teacher;
 	@NotEmpty
-	private String idStudent;
+	private String codInstitute;
 	@NotEmpty
-	private String idFamily;
+	private List<Student> students;
+	@NotEmpty
+	private List<Family> listeners;
 	
 }
